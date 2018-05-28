@@ -1,0 +1,21 @@
+<mvc:View xmlns:f="sap.ui.layout.form" xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="controller.viaCep"
+	xmlns:html="http://www.w3.org/1999/xhtml">
+	<App>
+		<pages>
+			<Page title="Busca de endereço">
+				<content>
+					<SearchField maxLength="9" value="{model:'view',path:'/searchTerm'}" placeholder="digite o CEP" search="onSearch"/>
+					<!--<Input value="{view>/searchTerm}" valueLiveUpdate="true" change="onSearch"/>-->
+					<f:SimpleForm busy="false" layout="ResponsiveGridLayout">
+						<f:content>
+							<Label text="Logradouro"/>
+							<Input value="{/logradouro}"/>
+							<Label text="Estado"/>
+							<Input value="{/uf}"></Input>
+						</f:content>
+					</f:SimpleForm>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

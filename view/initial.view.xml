@@ -1,0 +1,17 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="controller.initial"
+	xmlns:html="http://www.w3.org/1999/xhtml">
+	<App>
+		<pages>
+			<Page title="Title" busy="{view>/ocupado}">
+				<content>
+					<Label text="Nome"/>
+					<Text id="textNome"/>
+					<Label text="Sobrenome"/>
+					<Input value="{/sobrenome}"/>
+					<Input value="{/nome} {/sobrenome}"/>
+					<Button text="Carregar" press="onCarregar"/>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

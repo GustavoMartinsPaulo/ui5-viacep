@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+   <head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="utf-8">
+	
+ 	<title>Modelos</title>
+ 	
+      <script
+         id="sap-ui-bootstrap"
+         src="/resources/sap-ui-core.js" 
+         data-sap-ui-theme="sap_belize"
+         data-sap-ui-libs="sap.m,sap.ui.layout"
+         data-sap-ui-compatVersion="edge"
+         data-sap-ui-preload="async" >
+      </script>
+      
+      <script>
+    
+    	var fnCallback = function () {
+			
+			sap.ui.localResources("");
+			
+             var oView = sap.ui.xmlview({
+             	viewName: "view.viaCep"
+             });
+             
+             if(oView){
+             	oView.placeAt("content");
+             }
+        }
+        
+        sap.ui.getCore().attachInit(fnCallback);
+        
+      </script>
+      
+   </head>
+   
+   <body class="sapUiBody" id="content">
+      
+   </body>
+   
+</html>

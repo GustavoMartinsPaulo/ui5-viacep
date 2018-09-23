@@ -11,7 +11,7 @@
 							<Label text="Logradouro"/>
 							<Input value="{/logradouro}"/>
 							<Label text="Estado"/>
-							<Input value="{/uf}"></Input>
+							<Text text="{/uf}" />
 						</f:content>
 					</f:SimpleForm>
 				</content>

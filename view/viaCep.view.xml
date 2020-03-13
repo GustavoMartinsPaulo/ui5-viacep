@@ -1,5 +1,4 @@
-<mvc:View xmlns:f="sap.ui.layout.form" xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="controller.viaCep"
-	xmlns:html="http://www.w3.org/1999/xhtml">
+<mvc:View xmlns:f="sap.ui.layout.form" xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="controller.viaCep" xmlns:html="http://www.w3.org/1999/xhtml">
 	<App>
 		<pages>
 			<Page title="Busca de endereço">
@@ -11,10 +10,17 @@
 							<Label text="Logradouro"/>
 							<Input value="{/logradouro}"/>
 							<Label text="Estado"/>
-							<Text text="{/uf}" />
+							<Text text="{/uf}"/>
 						</f:content>
 					</f:SimpleForm>
 				</content>
+			<footer>
+			    <Toolbar width="100%" id="toolbar1">
+			        <content>
+			            <Button xmlns="sap.m" text="Limpa" id="button0"/>
+			        </content>
+			    </Toolbar>
+			</footer>
 			</Page>
 		</pages>
 	</App>
